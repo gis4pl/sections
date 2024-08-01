@@ -33,4 +33,4 @@ Currently Implemented Formats:
 
 ### Author : Marek Zygadło  
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marek-zygadło-44911116b/)&nbsp;&nbsp;&nbsp;&nbsp;
-[![image](nazwa.svg)](https://gis4.pl/sections)
+[![image](img/nazwa.svg)](https://gis4.pl/sections)
