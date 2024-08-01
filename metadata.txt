@@ -5,12 +5,12 @@
 [general]
 name=Sections
 qgisMinimumVersion=3.0
-description=Creates a map section polygon layer from a point layer.
+description=Creates a section polygon layer from a point layer
 version=0.2
 author=Marek Zygadło
 email=m.zygadlo@gis4.pl
 
-about=The plugin works only on point layers. It creates section polygons from the point layer, treating the points as section centers. The sections are drawn in the selected print sheet format, with set margins, for the selected scale.
+about=The plugin works only on point layers. It creates section polygons from the point layer, treating the points as section centers. The sections are drawn in the selected plot format, with set margins, for the selected scale.
 
 tracker=https://github.com/gis4pl/sections/issues
 repository=https://github.com/gis4pl/sections
@@ -20,23 +20,15 @@ repository=https://github.com/gis4pl/sections
 
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
-changelog=0.2
-- The GUI appearance has been improved:
-  - added field descriptions
-- In the GUI, tooltips have been added to fields
-- Translated the UI into:
-  - French
-  - Spanish
-  - German
-  - Polish
-  - Italian
+changelog=
+0.2 The GUI appearance has been improved, Added field descriptions, In the GUI, tooltips have been added to fields, Translated the UI into: French, Spanish, German, Polish, Italian.
 
 # Tags are comma separated with spaces allowed
 tags=centroid, inspire, mask, polygon, point, vector
 
 homepage=https://www.gis4.pl/sections
 category=Plugins
-icon=img/icon.svg
+icon=icon.svg
 # experimental flag
 experimental=False
 

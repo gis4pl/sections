@@ -3,7 +3,7 @@
 This is repository of source code for QGis Plugin named Sections developed by Marek Zygadło
 
 ### Description
-Plugin currently works only on point layers. Plugin creates section polygons from the point layer, treating the points as section centers. The sections are drawn in the selected print sheet format, with set margins, for the selected scale.
+Plugin currently works only on point layers. Plugin creates section polygona from the target point layer, treating points as section centers. Sections are drawn in the selected plot format, with margins defined by user, and in selected scale.
 
 Currently Implemented Formats:  
 |Page format| - |width (mm)| x |height (mm)|
@@ -33,4 +33,4 @@ Currently Implemented Formats:
 
 ### Author : Marek Zygadło  
 [![image](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marek-zygadło-44911116b/)&nbsp;&nbsp;&nbsp;&nbsp;
-[![image](img/nazwa.svg)](https://gis4.pl/sections)
+[![image](nazwa.svg)](https://gis4.pl/sections)
