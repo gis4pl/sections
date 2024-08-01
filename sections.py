@@ -171,7 +171,7 @@ class Sections:
     def initGui(self):
         """Create the menu entries and toolbar icons inside the QGIS GUI."""
 
-        icon_path = ':/plugins/sections/icon.svg'
+        icon_path = ':/plugins/sections/img/icon.svg'
         self.add_action(
             icon_path,
             text=self.tr(u'Sections from points'),
@@ -345,10 +345,14 @@ class Sections:
             sekcja_w_2 = sekcja_w/2
             for feature in features:
                 geom = feature.geometry()
-                geomSingleType = QgsWkbTypes.isSingleType(geom.wkbType())
-                x = geom.asPoint()
-                print(feature.id(),x[0]-sekcja_w_2,x[1]-sekcja_h_2,x[0]+sekcja_w_2,x[1]+sekcja_h_2)
-                rect = QgsRectangle(x[0]-sekcja_w_2,x[1]-sekcja_h_2,x[0]+sekcja_w_2,x[1]+sekcja_h_2)
+                # to działa jedynie na warstwie punktowej
+                #geomSingleType = QgsWkbTypes.isSingleType(geom.wkbType())
+                #x = geom.asPoint()
+                #print(feature.id(),x[0]-sekcja_w_2,x[1]-sekcja_h_2,x[0]+sekcja_w_2,x[1]+sekcja_h_2)
+                #rect = QgsRectangle(x[0]-sekcja_w_2,x[1]-sekcja_h_2,x[0]+sekcja_w_2,x[1]+sekcja_h_2)
+                # Teraz będzie działać zarówno na warstwie punktowej jak i multipunktowej
+                print(feature.id(),geom.asPoint().x()-sekcja_w_2,geom.asPoint().y()-sekcja_h_2,geom.asPoint().x()+sekcja_w_2,geom.asPoint().y()+sekcja_h_2)
+                rect = QgsRectangle(geom.asPoint().x()-sekcja_w_2,geom.asPoint().y()-sekcja_h_2,geom.asPoint().x()+sekcja_w_2,geom.asPoint().y()+sekcja_h_2)
                 geom = QgsGeometry().fromRect(rect)
             
                 ftr = QgsFeature()

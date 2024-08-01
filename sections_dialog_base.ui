@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>362</height>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>275</y>
+     <y>454</y>
      <width>341</width>
      <height>32</height>
     </rect>
@@ -29,100 +29,159 @@
     <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
    </property>
   </widget>
-  <widget class="QgsMapLayerComboBox" name="pointLayer">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>50</y>
-     <width>341</width>
-     <height>27</height>
+     <y>259</y>
+     <width>340</width>
+     <height>185</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>30</y>
-     <width>90</width>
-     <height>19</height>
-    </rect>
+   <property name="toolTip">
+    <string>Define margins between print format and map</string>
    </property>
-   <property name="text">
-    <string>Select a layer</string>
+   <property name="title">
+    <string>Margins</string>
    </property>
-  </widget>
-  <widget class="QDoubleSpinBox" name="doubleSpinBoxRightMargin">
-   <property name="geometry">
-    <rect>
-     <x>267</x>
-     <y>204</y>
-     <width>66</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QDoubleSpinBox" name="doubleSpinBoxTopMargin">
-   <property name="geometry">
-    <rect>
-     <x>167</x>
-     <y>176</y>
-     <width>66</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QDoubleSpinBox" name="doubleSpinBoxLeftMargin">
-   <property name="geometry">
-    <rect>
-     <x>67</x>
-     <y>204</y>
-     <width>66</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="spinBoxScale">
-   <property name="geometry">
-    <rect>
-     <x>67</x>
-     <y>138</y>
-     <width>95</width>
-     <height>28</height>
-    </rect>
-   </property>
-   <property name="maximum">
-    <number>10000000</number>
-   </property>
-   <property name="value">
-    <number>10000000</number>
-   </property>
-  </widget>
-  <widget class="QDoubleSpinBox" name="doubleSpinBoxBottomMargin">
-   <property name="geometry">
-    <rect>
-     <x>167</x>
-     <y>232</y>
-     <width>66</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="comboBoxOrientacja">
-   <property name="geometry">
-    <rect>
-     <x>239</x>
-     <y>87</y>
-     <width>131</width>
-     <height>27</height>
-    </rect>
-   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>133</x>
+      <y>91</y>
+      <width>73</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>img/nazwa.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxBottomMargin">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>128</y>
+      <width>66</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Define the bottom margin</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxLeftMargin">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>90</y>
+      <width>66</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Define the left margin</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxRightMargin">
+    <property name="geometry">
+     <rect>
+      <x>223</x>
+      <y>90</y>
+      <width>66</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Define the right margin</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBoxTopMargin">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>52</y>
+      <width>66</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Define the top margin</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>156</y>
+      <width>66</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bottom</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>223</x>
+      <y>118</y>
+      <width>66</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Right</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>32</y>
+      <width>66</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Top</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>70</y>
+      <width>66</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Left</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>142</y>
+     <y>225</y>
      <width>15</width>
      <height>19</height>
     </rect>
@@ -131,33 +190,114 @@
     <string>1 : </string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBoxFormat">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>87</y>
-     <width>180</width>
-     <height>27</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>167</x>
-     <y>208</y>
-     <width>66</width>
+     <y>30</y>
+     <width>340</width>
      <height>19</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Select a layer</string>
    </property>
-   <property name="pixmap">
-    <pixmap>nazwa.svg</pixmap>
+  </widget>
+  <widget class="QgsMapLayerComboBox" name="pointLayer">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>340</width>
+     <height>27</height>
+    </rect>
    </property>
-   <property name="scaledContents">
-    <bool>true</bool>
+   <property name="toolTip">
+    <string>Select the layer for which you want to get sections</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>87</y>
+     <width>340</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Print format</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>144</y>
+     <width>340</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Print orientation</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxFormat">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>107</y>
+     <width>180</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Select the format in which you will print the sections</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxOrientacja">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>164</y>
+     <width>180</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Select the orientation of the printed sections</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>201</y>
+     <width>340</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set map scale</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBoxScale">
+   <property name="geometry">
+    <rect>
+     <x>67</x>
+     <y>221</y>
+     <width>95</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Select the scale of the maps in the sections</string>
+   </property>
+   <property name="maximum">
+    <number>10000000</number>
+   </property>
+   <property name="value">
+    <number>10000000</number>
    </property>
   </widget>
  </widget>
@@ -168,8 +308,7 @@
    <header>qgsmaplayercombobox.h</header>
   </customwidget>
  </customwidgets>
- <resources>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>button_box</sender>
